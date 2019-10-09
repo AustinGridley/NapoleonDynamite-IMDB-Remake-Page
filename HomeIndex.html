@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Imdb Napoleon Dynamite Html Assignment</title>
+    <head>
+        <title>Imdb Napoleon Dynamite Html Assignment</title>
     <!--link to Imdb Napoleon Dynamite page so you can compare the html
         https://www.imdb.com/title/tt0374900/?ref_=nv_sr_1?ref_=nv_sr_1
     -->
-</head>
-<body>
+    </head>
+    <body>
  
-    <h1><!--Imdb title with hyperlink-->
-        <a href="https://www.imdb.com/?ref_=nv_home">IMDb
+        <h1><!--Imdb title with hyperlink-->
+            <a href="https://www.imdb.com/?ref_=nv_home">IMDb
+            </a>
+        </h1>
+        <form action="/action_page.php"> <!--Input box with text suggesting movies, tv shows etc.-->
+            _<input type="text" name="search" value="Find Movies, Tv shows, Cele" required minlength="4" maxlength="21" size="23">
+                <br>
+        </form> 
+        <form> <!--Used a radio to select which of these which isn't a drop down menu which I tried to get to work but I couldn't quite get it to work. I'll figure it out-->
+            <input type="radio" name="imdb" value="All" checked>
+                All<br>
+                    <input type="radio" name="imdb" value="Titles">
+                        Titles<br>
+                            <input type="radio" name="imdb" value="Tv Episodes">    
+                                Tv Episodes<br>
+                                    <input type="radio" name="imdb" value="Names" checked> 
+                                        Names<br>
+                                            <input type="radio" name="imdb" value="Companies"> 
+                                                Companies<br>
+                                                    <input type="radio" name="imdb" value="Keywords"> 
+                                                        Keywords<br>
+                                                            <input type="radio" name="imdb" value="AdvancedSearch>>" checked> 
+                                                                Advanced Search>>
+        </form>
+        <li>•
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://www.imdb.com/tv/?ref_=nv_tp_fdv"> 
+            Watch now for free
+            </a>
+        </li>
+        <li>•
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://www.imdb.com/chart/toptv/?ref_=nv_tp_tv250_2"> 
+            Movies, TV <br> & Showtimes 
+            </a>
+        </li>
+        <li>•
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://www.imdb.com/chart/toptv/?ref_=nv_tp_tv250_2"> 
+            Celebs, Events <br> & Photos 
+            </a>
+        </li>
+        <li>•
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://www.imdb.com/search/name/?gender=male,female&ref_=nv_tp_cel"> 
+            News & <br> Community 
+            </a> 
+        </li>
+        <li>•
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://www.imdb.com/registration/signin?u=https%3A%2F%2Fwww.imdb.com%2Flist%2Fwatchlist%3Fref_%3Dnv_wl_all_0"> 
+            Watchlist
+            </a>
+        </li>
+        <li>•
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://pro.imdb.com/login/ap?u=/login/lwa&imdbPageAction=signUp&rf=cons_nb_hm&ref_=cons_nb_hm"> 
+            Pro
+            </a>
+        </li>
+        <li>• |
+        </li> <!--Hyperlink with bullets and appropriate text-->
+        <li>• <a href="https://help.imdb.com/imdb?ref_=cons_nb_hlp"> Help
         </a>
-    </h1>
-    <form action="/action_page.php"> <!--Input box with text suggesting movies, tv shows etc.-->
-        _<input type="text" name="search" value="Find Movies, Tv shows, Cele" required minlength="4" maxlength="21" size="23">
-    <br>
-    </form> 
-    <form> <!--Used a radio to select which of these which isn't a drop down menu which I tried to get to work but I couldn't quite get it to work. I'll figure it out-->
-            <input type="radio" name="imdb" value="All" checked> All<br>
-            <input type="radio" name="imdb" value="Titles"> Titles<br>
-            <input type="radio" name="imdb" value="Tv Episodes"> Tv Episodes<br>
-            <input type="radio" name="imdb" value="Names" checked> Names<br>
-            <input type="radio" name="imdb" value="Companies"> Companies<br>
-            <input type="radio" name="imdb" value="Keywords"> Keywords<br>
-            <input type="radio" name="imdb" value="AdvancedSearch>>" checked> Advanced Search>>
-    </form>
-    <li>•
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://www.imdb.com/tv/?ref_=nv_tp_fdv"> Watch now for free
-    </a>
-    </li>
-    <li>•
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://www.imdb.com/chart/toptv/?ref_=nv_tp_tv250_2"> Movies, TV <br> & Showtimes 
-    </a>
-    </li>
-    <li>•
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://www.imdb.com/chart/toptv/?ref_=nv_tp_tv250_2"> Celebs, Events <br> & Photos 
-    </a>
-    </li>
-    <li>•
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://www.imdb.com/search/name/?gender=male,female&ref_=nv_tp_cel"> News & <br> Community 
-    </a> 
-    </li>
-    <li>•
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://www.imdb.com/registration/signin?u=https%3A%2F%2Fwww.imdb.com%2Flist%2Fwatchlist%3Fref_%3Dnv_wl_all_0"> Watchlist
-    </a>
-    </li>
-    <li>•
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://pro.imdb.com/login/ap?u=/login/lwa&imdbPageAction=signUp&rf=cons_nb_hm&ref_=cons_nb_hm"> Pro
-    </a>
-    </li>
-    <li>• |
-    </li> <!--Hyperlink with bullets and appropriate text-->
-    <li>• <a href="https://help.imdb.com/imdb?ref_=cons_nb_hlp"> Help
-    </a>
-    </li>
-    <li>• |
-    </li> <!--This took a while to get all done. Images of facebook etc with hyperlinks. Also fixed the size pretty close to what they should be.-->
-    <li>• <a href= "https://www.facebook.com/imdb">
+        </li>
+        <li>• |
+        </li> <!--This took a while to get all done. Images of facebook etc with hyperlinks. Also fixed the size pretty close to what they should be.-->
+        <li>• <a href= "https://www.facebook.com/imdb">
             <img src="https://image.flaticon.com/icons/svg/37/37409.svg"width="19" height="19" alt="Facebook symbol">
-        </a>
-        _<a href= "https://www.instagram.com/imdb/">
-                <img src="data:image/png;base64,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"width="19" height="19" alt="Instagram symbol">
+                </a>
+                    _<a href= "https://www.instagram.com/imdb/">
+                        <img src="data:image/png;base64,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"width="19" height="19" alt="Instagram symbol">
         </a>
         _<a href= "https://www.twitch.tv/IMDb/">
                 <img src="data:image/png;base64,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"width="22" height="22" alt="Twitch symbol">
